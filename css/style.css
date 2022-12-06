@@ -1,0 +1,292 @@
+/*cores da paleta de cores do site::
+color:
+#A33F25 vermelho
+#FFD156 amarelo
+#44533E aquele verde
+#372514 maronzito
+
+*/
+
+@font-face {
+    font-family: "gabriola" ;
+    src: url(../fontes/Gabriola.ttf);
+}
+body{
+   background-color: #44533E;
+   margin:0px ;
+   padding: 0px;
+    
+}
+a{
+    text-decoration: none;
+}
+header{
+    padding: 15px ;
+    background-color: #372514;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.5px 0.5px 3px 1px rgba(0, 0, 0, 0.226) ;
+}
+header h1 a{
+    color:#FFD156;
+    font-family: "gabriola";
+    font-size: 2em;
+    font-style: italic;
+    letter-spacing: 3px;
+    
+}
+header h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+nav > a{
+    
+    text-align: center;
+    color: #FFD156;
+    background-color: #55391edc;
+    text-decoration: none;
+    margin: 5px 30px;
+    padding: 5px 6px;
+    border-radius: 5px ;
+    box-shadow: 0.5px 0.5px 3px 1px rgba(0, 0, 0, 0.226) ;
+    font-family: "gabriola";
+    font-style: italic;
+    font-size: 2em;
+
+}
+
+nav > a:hover{
+    color: #372514;
+    background-color: #FFD156;
+    box-shadow: 0.5px 0.5px 3px 1px rgba(0, 0, 0, 0.226) ;
+
+}    
+main{
+    display: flex;
+    flex-direction: column;
+}
+.banner{
+    text-align: center;
+}
+
+.localondeimagem{
+    text-align: center;
+}
+.duas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.lateral > a, .principal a{
+    text-decoration: none;
+}
+.lateral  a  article, .principal a article, .lateral article, .principal article{
+    background-color:#fff;
+    padding: 10px;
+    border-radius: 5px 10px 10px 10px;
+    margin: 15px;
+    color: black;
+    text-align: justify;
+}
+.lateral{
+    width: 30%;
+    
+}
+.principal{
+    width: 70%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #372514;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer span, footer span a, footer div span, footer div span a{
+    color:#FFD156;
+    
+    
+}
+footer div{
+    margin-top: 5px;
+}
+
+.rodape_post {
+    text-align: center;
+    background-color: #372514;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+}
+
+.post{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.post article{
+    background-color: white;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 30%;
+    margin: 15px;
+    border-radius: 10px;
+   
+    
+}
+
+
+article img{
+    display: block;
+}
+nav span{
+    text-align: center;
+    background-color: #FFD156;
+    text-decoration: none;
+    margin: 10px 30px;
+    padding: 2px 6px;
+    border-radius: 5px ;
+    font: normal bold 20px arial;
+    box-shadow: 0.5px 0.5px 3px 1px rgba(0, 0, 0, 0.226) ;
+
+}
+nav span a{
+    color: #372514;
+}
+img{
+    width: 100%;
+   
+}
+article p{
+    font-size: 1.5em;
+    text-align: justify;
+}
+article h2{
+    text-align: center;
+    font-family: "gabriola";
+    font-size: 3em;
+    font-style: italic;
+    letter-spacing: 3px;
+    margin: 0px;
+}
+.post .meu_dia_grande{
+    background-color: white;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 70%;
+    margin: 15px;
+    border-radius: 10px;
+}
+.fontes_textos {
+    display: flex;
+    color: #44533E;
+    font-family: "gabriola";
+    font-size: 2em;
+    font-style: italic;
+    letter-spacing: 3px;
+    background-color: #FFD156;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+
+}
+article iframe{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
+.post .oquefalam{
+    background-color: white;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 50%;
+    margin: 15px;
+    border-radius: 10px;
+}
+.banner_g{
+    display: block;
+
+}
+.banner_m{
+    display: none;
+}
+.banner_p{
+    display: none;
+}
+
+@media (max-width: 1024px){
+    .post{
+        flex-direction: column;
+
+    }
+    .post article, .post .meu_dia_grande,.post .oquefalam{
+        max-width: 100%;
+    }
+    
+    .duas{
+        flex-direction: column;
+    }
+    .principal, .lateral{
+        width: 100%;
+    }  .banner_g{
+        display: block;
+    
+    }
+    .banner_m{
+        display: none;
+    }
+    .banner_p{
+        display: none;
+    }  
+}
+@media (max-width: 768px){
+    .banner_g{
+        display: none;
+    
+    }
+    .banner_m{
+        display: block;
+    }
+    .banner_p{
+        display: none;
+    }
+    
+}
+@media (max-width: 480px){
+    nav{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    footer{
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+        font-size: 1.7em;
+    }
+    .banner_g{
+        display: none;
+    
+    }
+    .banner_m{
+        display: none;
+    }
+    .banner_p{
+        display: block;
+    }
+    
+}
+
